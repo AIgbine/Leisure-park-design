@@ -8,6 +8,8 @@ An ArcGIS Pro project redesigning a harbour using lighted data
 **Data**:
 The data is an AutoDesk drawing file (.dwg) showing the harbour and wind turbine factory layout. 
 
+![CAD data view](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/cadview.PNG)
+
 **Data preparation and cleaning**
 
 The data is first imported into ArcGIS Pro using the Conversion Tools from the geoprocessing toolbox. 
@@ -56,6 +58,8 @@ Coded domains can be created by right-clicking on the geodatabase and selecting 
 To share the final output, the features are extracted as shape files using the conversion tool 
 
 The containing folder is then added to a zip file. To find out more about supported formats, check ArcGIS online documentation here.
+
+![web map view](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/webmap.png)
 
 **Other activities**:
 
