@@ -13,7 +13,11 @@ The data is an AutoDesk drawing file (.dwg) showing the harbour and wind turbine
 The data is first imported into ArcGIS Pro using the Conversion Tools from the geoprocessing toolbox. 
 From the Conversion tools, the To Geodatabase tool was used to convert the .dwg data to a geodatabase with four feature classes.
 
+![CAD to GDB](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/cad2gdb.PNG)
+
 Specify the spatial reference and run the tool.
+
+![created gdb view](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/gdb.PNG)
 
 To redesign the harbour, we will focus on the polygon and polyline feature classes, using the delete features menu in the Edit ribbon to delete the layouts of the wind turbines and any sections that are not useful for the new project. 
 However, the parking polygons and polylines must be preserved.
@@ -29,12 +33,17 @@ renting zones: electric vehicle charging, mobility rent
 Nature zones: consist of landscaped areas and hedges
 These were added to the layouts as polygon feature classes.
 
+![create features screenshot](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/create%20feature%20class.png)
+
 Each feature created should have the following columns:
 Name Text
 Area Double
 Interest_in Text
 Category Text
+
 ArcGIS Pro automatically calculates the length and area of these polygons, however, as part of the exercise, I calculated the area of each polygon using Check Geometry Attributes under Data Management Tools. This menu can also be accessed by right-clicking on a column and selecting the calculate geometry option.
+
+![geometry tool](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/calc_are.png)
 
 The category for each polygon depends on its size, polygons less than 1000m2 are small, larger than 10,000m2 are large and in between are medium
 
@@ -50,5 +59,6 @@ The containing folder is then added to a zip file. To find out more about suppor
 
 **Other activities**:
 
-Web_Area:Other activities include creating a new column, web_area, to re-calculate the area using Arcade. It is better to use the AreaGeodetic function as it is more accurate than the simple Area function. Note that there are minor variations in the calculated area.
+Web_Area: Other activities include creating a new column, web_area, to re-calculate the area using Arcade. It is better to use the AreaGeodetic function as it is more accurate than the simple Area function. Note that there are minor variations in the calculated area.
 
+![web area](https://github.com/AIgbine/Leisure-park-design/blob/main/Pictures/web_area.png)
